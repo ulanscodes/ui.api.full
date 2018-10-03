@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="tests">
+<!-- <suite name="IIHS Automation Smoke Tests" verbose="2"> -->
+
+
+	<test name="ChromeTest">
+        <parameter name = "myBrowser" value = "firefox"/>
+		<packages>
+			<package name="smoke_tests"></package>
+		</packages>
+
+	</test>
+	
+	
+	<test name="FireFoxTest">
+    <parameter name = "myBrowser" value = "chrome"/>
+		<packages>
+			<package name="smoke_tests"></package>
+		</packages>
+
+	</test>
+
+
+</suite>
